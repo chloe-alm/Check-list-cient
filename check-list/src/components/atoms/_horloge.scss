@@ -1,0 +1,18 @@
+.horlogeContainer {
+  
+    // background: linear-gradient(to left, #f9f8f9, #9867fb);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(57, 9, 99);
+ 
+    // padding: 3% 0 2% 0;
+    &_horloge {
+      font-size: 40px;
+    }
+    &_date {
+      font-size: 25px;
+    }
+  }

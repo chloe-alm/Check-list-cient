@@ -1,0 +1,111 @@
+@import "../../../config/mixin";
+.container {
+  font-family: "Roboto", sans-serif;
+  height: 60vh;
+  // width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_postCreate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 50vh;
+    width: 93vw;
+
+    padding:3%;
+
+    @include media (desktop){
+      width: 50vw;
+    }
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    & div>input {
+      width:90%;
+      @include media (desktop){
+        width: 70%;
+      }
+    }
+    & div>textarea{
+      width: 90%;
+      @include media (desktop){
+        width: 70%;
+      }
+    }
+
+
+    &_content {
+    
+      @include media (desktop){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+       
+      }      
+      & textarea {
+        margin: 10px 0px 1rem;
+        height: 10vh;
+        width: 100%;
+        font-size: 15px;
+        border-radius: 6px;
+        font-style: 'Roboto',sans-serif;
+ 
+      }
+    }
+    &_hashtag {
+      & input {
+        margin: 10px 0px 1rem;
+        height: 5vh;
+        width: 100%;
+        border-radius: 6px;
+        font-size: 15px;
+      }
+    }
+    &_erreur {
+      padding-top: 2%;
+      color: #e0245e;
+      font-weight: normal;
+    }
+    &_button { 
+      width: 60%;   
+      color: #fff;
+      font-size: 14px;
+      background:linear-gradient(to left, #eae2fb, #8c52ff);
+      font-style: italic;
+      border-radius: 10px;
+      margin: 15px 5px 0 17vw;
+      padding: 10px 30px;
+      cursor: pointer;
+      // opacity: 0.8;
+      // float: center;
+
+      &:hover {
+        background-color:#8c52ff;
+        opacity: 2;
+      }
+      @include media (desktop){
+        color: #fff;
+        font-size: 14px;
+        background: #8c52ff;
+        font-style: italic;
+        border-radius: 10px;
+        margin: 2vh 0 0 9.3vw;
+        padding: 10px 30px;
+        cursor: pointer;
+        &:hover {
+          background-color: #b392f7;
+          opacity: 2;
+        }
+        
+      }
+    }
+  }
+}

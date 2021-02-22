@@ -1,0 +1,48 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8% auto;
+    width: 35%;
+    min-width: 350px;
+    text-align: center;
+    // border: 3px solid red;
+    &_titleForm {
+      font-size: 30px;
+      font-weight: lighter;
+      margin-bottom: 5%;
+    }
+    &_form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      &_labels {
+        margin-bottom: 1%;
+      }
+      &_inputs {
+        width: 100%;
+        margin-bottom: 2%;
+        padding: 2% 2%;
+        border: none;
+        border-radius: 3px;
+        background-color: lightgray;
+      }
+      &_buttonContainer {
+        margin: 5%auto;
+        button {
+          margin-bottom: 3%;
+        }
+        p {
+          font-weight: lighter;
+        }
+        a {
+          color: inherit;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }

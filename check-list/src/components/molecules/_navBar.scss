@@ -1,0 +1,105 @@
+@import "../../config/mixin";
+@import "../../config/base";
+.navBar_connecter {
+  
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  @include media(desktop){
+    background:linear-gradient(to left, #eae2fb, #8c52ff);
+  }
+  &_logo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0.6rem;
+    width: 40vw;
+    height: 10vh;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &_titre {
+    padding-left: 1rem;
+  }
+  &_button {
+    border:white;
+    background: white;
+    // border-radius: 15px;
+    @include media(desktop){
+      background: #e4c9fd;
+      border-radius: 10px;
+ 
+    }
+
+    &_link {
+      text-decoration: none;
+      color: white;
+      @include media(desktop) {
+        color: #8c52ff;
+        font-size: 1.1rem;
+     
+      }
+    }
+    &_addList {
+      padding-top: 1.6rem;
+      width: 10vw;
+      height: 8vh;
+      @include media(desktop) {
+        display: none;
+      }
+    }
+  }
+}
+
+.navBar {
+  margin-top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &_logo {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0.6rem;
+    width: 45vw;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &_titre {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+  }
+  &_boutons {
+    width: 50vw;
+
+    &_register {
+      text-decoration: none;
+      border: none;
+      width: 23vw;
+      height: 4vh;
+      margin-right: 5px;
+      border-radius: 5px;
+      background: linear-gradient(to left, #eae2fb, #8c52ff);
+    }
+    &_login {
+      text-decoration: none;
+      color: white;
+      width: 23vw;
+      height: 4vh;
+      margin-right: 5px;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid #8c52ff;
+    }
+  }
+}

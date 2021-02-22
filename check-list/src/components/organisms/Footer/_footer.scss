@@ -1,0 +1,25 @@
+@import "../../../config/mixin";
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  // padding-top:20px;
+  &_reseaux {
+    padding-left: 10%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 0.8rem;
+  }
+
+  &_droit {
+    width: 60%;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+  }
+}

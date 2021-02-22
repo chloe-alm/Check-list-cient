@@ -1,0 +1,55 @@
+@import "../../../config/mixin";
+.home{
+    
+    height: 120vh;
+    width: 100vw;
+    overflow-x: hidden;
+    text-align: justify;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    
+    &_titre {
+    
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+
+ 
+      }
+      &_image {
+        object-fit: cover;
+        width: 100%;
+        padding-top: 1rem;
+        @include media(desktop){
+            
+
+            height: 60vh;
+            width: 55vw;
+            display: flex;
+            flex-direction: center;
+            padding-left: 22rem;
+            border-radius: 15px;
+          
+          
+        }
+      }
+      &_paragraphe {
+        height: auto;
+        padding: 10% 2rem;
+        text-align: justify;
+        font-size: 1.3rem;
+    
+        @include media(desktop) {
+      
+          height: auto;
+          font-size: 1.4rem;
+          padding: 8% 10rem;
+          text-align: justify;
+       
+        }
+      }
+      h2 {
+        color: #8c52ff;
+        text-align: center;
+      }
+}

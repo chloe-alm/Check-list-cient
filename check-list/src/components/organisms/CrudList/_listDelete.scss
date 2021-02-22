@@ -1,0 +1,175 @@
+@import "../../../config/mixin";
+.deleteContainer {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  width: 100%;
+ 
+  @include media(desktop) {
+    margin:0;
+  }
+  &_titre {
+    height: 10%;
+    margin-bottom: 5rem;
+  }
+  &_OnePost {
+    height: 70%;
+    margin: 30px 10px 10px 10px;
+    &_image {
+      height: 40%;
+      width: 100%;
+      object-fit: cover;
+      @include media(desktop) {
+        height: 30%;
+        // width: 100%;
+        object-fit: cover;
+        // padding: 1.1rem;
+      }
+    }
+    &_details {
+      height: 50%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include media(desktop) {
+       
+        height: 30%;
+      }
+
+      &_content {
+        height: auto;
+
+        color: black;
+        font-size: 1rem;
+        text-align: justify;
+
+        border: solid 1px #4a9e8886;
+        border-radius: 6px;
+
+        padding: 6%;
+        margin-bottom: 1rem;
+
+        background-color: #8bada459;
+
+        @include media(desktop) {
+          font-size: 1.1rem;
+        }
+      }
+      &_bottom {
+        margin-top: 20px;
+        height: 8%;
+
+        padding: 3%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        &_hashtag {
+          font-style: italic;
+          font-size: 1.1rem;
+          color: #10272186;
+          // @include media(desktop) {
+          //   font-size: 1.1rem;
+          // }
+        }
+
+        &_like {
+          font-size: 1.1rem;
+          color: #1c3f36;
+        }
+      }
+    }
+    &_erreur {
+      height: 2%;
+      color: red;
+      font-weight: normal;
+    }
+
+    &_boutonSupprimer {
+      color: #fff;
+      font-size: 14px;
+      background: #ed8e79;
+      font-style: italic;
+      border-radius: 10px;
+      margin: 30px 5px;
+      padding: 10px 30px;
+      cursor: pointer;
+      opacity: 0.8;
+      //  float: right;
+      &:hover {
+        background-color: rgb(249, 115, 85);
+        opacity: 2;
+      }
+      @include media(desktop) {
+        color: #fff;
+        font-size: 14px;
+        background: #ed8e79;
+        font-style: italic;
+        border-radius: 10px;
+        margin: 5px 5px;
+        // width: 20rem;
+        // margin: 30px 5px;
+        // padding: 10px 30px;
+        cursor: pointer;
+        opacity: 0.8;
+        //  float: right;
+        &:hover {
+          background-color: rgb(249, 115, 85);
+          opacity: 2;
+        }
+      }
+    }
+    &_boutonModifier {
+      color: #fff;
+      font-size: 14px;
+      background: #4a9e87;
+      font-style: italic;
+      border-radius: 10px;
+      margin: 30px 5px;
+      padding: 10px 30px;
+      cursor: pointer;
+      // opacity: 0.8;
+      float: right;
+      &:hover {
+        background-color: #65d1b3;
+        opacity: 2;
+      }
+      @include media(desktop) {
+        color: #fff;
+        font-size: 14px;
+        background: #067457;
+        font-style: italic;
+        border-radius: 10px;
+        margin: 5px 5px;
+
+        // padding: 10px 30px;
+        cursor: pointer;
+        // width: 20rem;
+        // opacity: 0.8;
+        float: right;
+        &:hover {
+          background-color: #65d1b3;
+          opacity: 2;
+        }
+      }
+    }
+    @include media(desktop) {
+      height: 100%;
+      width: 50%;
+      margin: -5vw;;
+      color: #fff;
+      font-size: 14px;
+      background:#D8E3E0;
+
+
+      margin: 30px 5px 5px 460px;
+      padding: 10px 70px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

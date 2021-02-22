@@ -1,0 +1,19 @@
+.listCardContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+    padding: 1.2%;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    background: rgb(243, 239, 239);
+    &_titleContainer {
+      &_listName {
+        font-weight: bolder;
+      }
+    }
+    &_buttonContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 11.5%;
+    }
+  }
